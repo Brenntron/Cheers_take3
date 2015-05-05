@@ -1,7 +1,15 @@
 require_relative '../helper.rb'
 
-class TestIntegration < Minitest::Test
-  def test_fail
-    assert_equal true, false
+class TestCheers < Minitest::Test
+  def test_happy_path
+    fail
+  end
+
+  def test_no_input
+    fail
+  end
+
+  def test_bad_birthday_format
+    fail
   end
 end
