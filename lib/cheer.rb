@@ -10,6 +10,10 @@ class Cheer
     now = DateTime.now.yday
     dif = birthday - now
 
+    if ArgumentError
+      return nil
+    end
+
     if dif < 0
       dif = 365 + dif
     end
